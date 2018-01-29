@@ -1,0 +1,13 @@
+<h1>Home Page</h1>
+<p class="list-group-item">Some text here</p>
+
+<div ng-repeat="note in notes">
+  <li class="container-fluid note-item" ng-show="note.show">
+    <div class="col-sm-12 note-content">
+      <h2 class="note-number">{{note.index+1}}.</h2>
+      <h1 class="note-body">{{note.name}}</h1>
+    </div>
+    <button id="note-display-btn" class="btn" ng-click="toggleShow(note.index+1)">{{getBtnText(note.index)}}</button>
+    <hr />
+  </li>
+</div>

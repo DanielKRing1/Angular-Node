@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="site">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Home Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css" />
+
+  </head>
+
+  <!-- Create controller file -->
+  <!-- Link controller and related js files in index.html -->
+  <!-- Use controller name when specifying controller -->
+  <!-- controller: ''-->
+
+  <!-- Create a Custom directive using templateUrl and controller -->
+
+  <body>
+
+    <nav-bar></nav-bar>
+
+    <ui-view></ui-view>
+
+    <!-- Toast -->
+    <div class="toast" style="display:none">No more items to display</div>
+
+    <footer></footer>
+
+    <!-- Load jQuery before Bootstrap -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AngularJS -->
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <!-- AngularJS UI-Router -->
+    <script type="text/javascript" src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="public/js/app.js"></script>
+
+    <!-- Link controllers here, can link them directly to directives using 'controller: [CTRLLER_NAME]' -->
+
+    <!-- Angular Controllers -->
+    <script type="text/javascript" src="public/js/controllers/home-controller.js"></script>
+    <script type="text/javascript" src="public/js/controllers/footer-controller.js"></script>
+    <script type="text/javascript" src="public/js/components/components.js"></script>
+    <!-- Angular Custom Directives -->
+    <script type="text/javascript" src="public/js/directives/footer-directive.js"></script>
+    <script type="text/javascript" src="public/js/directives/nav-bar-directive.js"></script>
+
+  </body>
+</html>
